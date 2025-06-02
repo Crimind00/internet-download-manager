@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 98%; /* #FAFAFA */
+  --foreground: 210 6% 19%; /* #323130 */
+  --muted: 240 5% 96%; /* #F3F2F1 */
+  --muted-foreground: 210 6% 38%; /* #605E5C */
+  --popover: 0 0% 100%;
+  --popover-foreground: 210 6% 19%;
+  --card: 0 0% 100%;
+  --card-foreground: 210 6% 19%;
+  --border: 220 13% 91%; /* #E1E5EB */
+  --input: 220 13% 91%;
+  --primary: 207 90% 54%; /* #0078D4 */
+  --primary-foreground: 211 100% 99%;
+  --secondary: 240 5% 96%;
+  --secondary-foreground: 210 6% 10%;
+  --accent: 240 5% 96%;
+  --accent-foreground: 210 6% 10%;
+  --destructive: 0 70% 50%; /* #D13438 */
+  --destructive-foreground: 60 9% 98%;
+  --ring: 210 6% 19%;
+  --radius: 0.5rem;
+  
+  /* Custom colors for the design */
+  --primary-dark: 207 76% 44%; /* #106EBE */
+  --secondary-color: 240 100% 70%; /* #6B73FF */
+  --success: 120 80% 25%; /* #107C10 */
+  --warning: 39 100% 50%; /* #FF8C00 */
+  --error: 0 70% 50%; /* #D13438 */
+  --neutral-dark: 210 6% 19%; /* #323130 */
+  --neutral-medium: 210 6% 38%; /* #605E5C */
+  --neutral-light: 240 5% 96%; /* #F3F2F1 */
+  --surface: 0 0% 98%; /* #FAFAFA */
+}
+
+.dark {
+  --background: 240 10% 4%;
+  --foreground: 0 0% 98%;
+  --muted: 240 4% 16%;
+  --muted-foreground: 240 5% 65%;
+  --popover: 240 10% 4%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 4%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 4% 16%;
+  --input: 240 4% 16%;
+  --primary: 207 90% 54%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 240 4% 16%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 240 4% 16%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 5% 84%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  .text-primary-dark {
+    color: hsl(var(--primary-dark));
+  }
+  
+  .bg-primary-dark {
+    background-color: hsl(var(--primary-dark));
+  }
+  
+  .text-success {
+    color: hsl(var(--success));
+  }
+  
+  .bg-success {
+    background-color: hsl(var(--success));
+  }
+  
+  .text-warning {
+    color: hsl(var(--warning));
+  }
+  
+  .bg-warning {
+    background-color: hsl(var(--warning));
+  }
+  
+  .text-error {
+    color: hsl(var(--error));
+  }
+  
+  .bg-error {
+    background-color: hsl(var(--error));
+  }
+  
+  .text-neutral-dark {
+    color: hsl(var(--neutral-dark));
+  }
+  
+  .text-neutral-medium {
+    color: hsl(var(--neutral-medium));
+  }
+  
+  .bg-neutral-light {
+    background-color: hsl(var(--neutral-light));
+  }
+  
+  .bg-surface {
+    background-color: hsl(var(--surface));
+  }
+}
